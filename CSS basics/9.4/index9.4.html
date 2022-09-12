@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script
+      src="https://kit.fontawesome.com/fa98044e1d.js"
+      crossorigin="anonymous"
+    ></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Quicksand&display=swap" rel="stylesheet">
+    <title>My first web page</title>
+  </head>
+  <style>
+   * {
+    box-sizing: border-box;
+   }
+   
+   body {
+    
+      font-family: 'Quicksand', sans-serif;
+
+    }
+    .navbar {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #01453ac1;
+    }
+    .navbar li {
+      display: inline-block;
+    }
+
+    .navbar li a {
+    
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+    }
+
+    .navbar li a:hover {
+  background-color: #111;
+}
+    .mainFrame {
+      height: 8000px;
+      text-align: center;
+      background-color: #5484afbd;
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+      border: double 4px white;
+
+    }
+
+    .myButton a {
+      box-shadow: 3px 4px 0px 0px #000000;
+      background: linear-gradient(to bottom, #00725d 5%, #5ea8fd 100%);
+
+      border-radius: 25px;
+      border: 1px solid #ffffff;
+      display: inline-block;
+      cursor: pointer;
+      color: #090000;
+      font-family: Arial;
+      font-size: 25px;
+      padding: 10px 20px;
+      text-decoration: none;
+      text-shadow: 0px 1px 0px #000000;
+      position: fixed;
+      margin-right: px;
+    }
+    .myButton:hover {
+      background: linear-gradient(to bottom, #f24437 5%, #c62d1f 100%);
+      background-color: #f24437;
+    }
+    .myButton {
+      margin-left: -1250px;
+      margin-top: 150px;
+      
+    }
+    .profilePic {
+      width: 100px;
+      height: 100px;
+      border-radius: 50px;
+    }
+    .card {
+      width: 150px;
+      height: 250px;
+      background-color: rgb(65, 146, 142);
+      box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2),
+        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+margin: 5px;
+      display: inline-block;
+    }
+    .container {
+      text-align: center;
+      color: white;
+    }
+    .neImage {
+      width: 100%;
+    }
+    .social li {
+      display: inline-block;
+      list-style-type: none;
+      margin: 5px;
+      
+      
+
+
+    }
+    .social {
+
+    }
+  </style>
+  <body>
+    <div class="navbar">
+      <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#news">News</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#about">About</a></li>
+      </ul>
+
+
+    </div>
+    <div class="mainFrame" id="mainFrame">
+      <div class="first title">
+        <h1><em>Hi! </em> Im Lidor</h1>
+        <h2>I am 29 years old <i class="fa-solid fa-phone"></i></h2>
+      </div>
+      <img class="profilePic"
+        src="https://scontent.fsdv2-1.fna.fbcdn.net/v/t1.6435-9/47580615_100382527674407_6318154526029250560_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=09cbfe&_nc_ohc=2pZN9UHB0-oAX9Kz9qF&tn=db_8rMxUv505uYxu&_nc_ht=scontent.fsdv2-1.fna&oh=00_AT-0rNSE1ZNR-mJb59SG_ge9JHmQsvlb2IcgAHPIC_2GwA&oe=633C3434"
+        alt="profile picture"
+      />
+      <div class="intro">
+        <p>
+          I love to write code and design websites.
+          <i class="fas fa-brush"></i>
+          <br />
+          I like to play guitar and play chess.
+          <i class="fa-solid fa-chess"></i>
+        </p>
+      </div>
+
+
+      <div class="myButton">
+        <a href="#mainFrame">&#8593</a>
+      </div>
+
+      <div class="card">
+        <img
+          src="https://www.israelhayom.co.il/wp-content/uploads/2022/01/16032162413382_b.jpg"
+          class="neImage"
+        />
+        <div class="container">
+          <h3>Netivot</h3>
+          <p>somewhere to live</p>
+          <div class="links">
+            <a href="http://www.my house">my house</a>
+            <a href="http://www.your house">your house</a>
+            <a href="http://www.our house">our house</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.israelhayom.co.il/wp-content/uploads/2022/01/16032162413382_b.jpg"
+          class="neImage"
+        />
+        <div class="container">
+          <h3>Netivot</h3>
+          <p>somewhere to live</p>
+          <div class="links">
+            <a href="http://www.my house">my house</a>
+            <a href="http://www.your house">your house</a>
+            <a href="http://www.our house">our house</a>
+          </div>
+        </div>
+      </div>
+      <div class="card">
+        <img
+          src="https://www.israelhayom.co.il/wp-content/uploads/2022/01/16032162413382_b.jpg"
+          class="neImage"
+        />
+        <div class="container">
+          <h3>Netivot</h3>
+          <p>somewhere to live</p>
+          <div class="links">
+            <a href="http://www.my house">my house</a>
+            <a href="http://www.your house">your house</a>
+            <a href="http://www.our house">our house</a>
+          </div>
+        </div>
+      </div>
+      <div class="social">
+        <h4>Social</h4>
+        <ul>
+          <li>
+            <a href="https://github.com/"
+              ><span class="fab fa-xl fa-github"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://linkedin.com/"
+              ><span class="fa fa-xl fa-linkedin"></span
+            ></a>
+          </li>
+          <li>
+            <a href="https://facebook.com/"
+              ><span class="fa fa-xl fa-facebook"></span
+            ></a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+  </body>
+</html>
