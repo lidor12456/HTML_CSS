@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <style>
+    .tooltip {
+      position: relative;
+      display: inline-block;
+      border-bottom: 1px solid rgb(242, 55, 55);
+    }
+
+    .tooltip .tooltiptext {
+      visibility: hidden;
+      width: 120px;
+      background-color: rgb(41, 134, 248);
+      color: #fff;
+      text-align: center;
+      border-radius: 6px;
+      padding: 5px 0;
+      position: absolute;
+      z-index: 1;
+      bottom: 150%;
+      left: 50%;
+      margin-left: -60px;
+    }
+
+    .tooltip .tooltiptext::after {
+      content: "";
+      position: absolute;
+      top: 100%;
+      left: 50%;
+      margin-left: -5px;
+      border-width: 5px;
+      border-style: solid;
+      border-color: rgb(255, 254, 254) transparent transparent transparent;
+    }
+
+    .tooltip:hover .tooltiptext {
+      visibility: visible;
+    }
+
+    p {
+padding: 30px;    }
+  </style>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Id enim,
+      quibusdam dicta molestiae ipsa incidunt quo ut optio doloremque
+      voluptatibus velit maiores eius labore amet vitae voluptatem quis
+      reprehenderit error!
+      <span class="tooltip"
+        >Ad accusamus similique
+        <span class="tooltiptext">Hi there!</span></span
+      >
+      ipsa cum. Quas veritatis explicabo, ipsam dignissimos minima reprehenderit
+      exercitationem, deleniti est sit voluptatum nemo. Dolores sint nihil fugit
+      cupiditate, ipsam repudiandae. Dolorum, neque tempora? Consequatur,
+      ratione! Non officiis temporibus, doloribus eum amet facere quas delectus
+      pariatur suscipit! Harum sit quos aut cupiditate aliquam. Quas, culpa
+      placeat. Sunt illum aliquid, alias in nam dolorum accusantium soluta
+      officiis? Voluptas quidem amet, nostrum ad veniam tempora obcaecati
+      distinctio provident rerum harum quisquam, expedita quibusdam autem odit.
+      Nesciunt cum ex, vero est, necessitatibus odio reprehenderit at illo velit
+      facere sapiente! Maxime veniam voluptate ad optio soluta ea, quaerat ex
+      similique, nam voluptas molestias deleniti asperiores laboriosam possimus
+      fugit. Pariatur, tempore! Repellendus quas, quasi iure mollitia numquam
+      dolorum voluptate neque quae? Rem voluptatum perspiciatis quos reiciendis
+      accusantium hic veritatis facere aliquam sed sequi quo beatae quam nam,
+      voluptatem eligendi perferendis quasi. Excepturi corporis numquam modi
+      accusamus, expedita officia sapiente maxime inventore.
+    </p>
+    <!-- <div class="tooltip">
+      Hover over me
+      <span class="tooltiptext">Tooltip text</span> -->
+    </div>
+  </body>
+</html>
