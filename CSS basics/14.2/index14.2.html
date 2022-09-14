@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+    /*C866B2)*/
+    body {
+      height: 100vh;
+      font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 20px;
+      display: grid;
+      place-items: center;
+    }
+
+    .btn1 {
+      text-decoration: none;
+      border: 2px solid #764abc;
+      color: #764abc;
+      padding: 20px 45px;
+      border-radius: 25px;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+
+    .btn1::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #f11338;
+      transition: all 1s;
+      z-index: -1;
+      transform: translateY(-100%);
+    }
+
+    .btn1:hover::after {
+      transform: translateX(0);
+      content: "cool";
+      text-align: center;
+    }
+    .btn1:hover {
+      color: #ffffff;
+    }
+
+    .btn2 {
+      text-decoration: none;
+      border: 2px solid #764abc;
+      color: #764abc;
+      padding: 20px 45px;
+      border-radius: 25px;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+
+    .btn2::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #764abc;
+      transition: all 1s;
+      z-index: -1;
+      transform: translateX(-100%);
+    }
+
+    .btn2:hover::after {
+      transform: translateX(0);
+    }
+    .btn2:hover {
+      color: #fff;
+    }
+    .btn3 {
+      text-decoration: none;
+      border: 2px solid #764abc;
+      color: #764abc;
+      padding: 20px 45px;
+      border-radius: 25px;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+
+    .btn3::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 2s linear;
+    }
+
+    .btn3:hover::after {
+      background-color: #f11338;
+      transform: rotate(1.57rad);
+    }
+
+    .btn4 {
+      text-decoration: none;
+      border: 2px solid #764abc;
+      color: #764abc;
+      padding: 20px 45px;
+      border-radius: 25px;
+      position: relative;
+      transition: all 1s;
+      overflow: hidden;
+    }
+
+    .btn4::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      transition: all 0.8s linear;
+    }
+
+    .btn4:hover::after {
+      background-color: #f11338;
+      transform: scale(0.2);
+      opacity: 0;
+    }
+  </style>
+  <body>
+    <a href="#" class="btn1">Y</a>
+    <a href="#" class="btn2">X</a>
+    <a href="#" class="btn3">Rotate</a>
+    <a href="#" class="btn4">Scale</a>
+    <a href="#" class="btn5">Skew</a>
+  </body>
+</html>

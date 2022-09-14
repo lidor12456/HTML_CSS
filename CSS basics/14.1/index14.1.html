@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      body {
+        height: 100vh;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 20px;
+      }
+
+      .first-div {
+        background-color: lightgreen;
+        height: 150px;
+        width: 100px;
+        position: relative;
+        transition: all 1s;
+        overflow: hidden;
+      }
+      .first-div::before {
+        content: "";
+        position: absolute;
+        background-color: yellow;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        transition: all 1s;
+        z-index: 1;
+        transform: translateX(-100%);
+      }
+      .first-div:hover::before {
+        transform: translateX(0);
+      }
+
+      /* @keyframes myAnim {
+        0% {
+          opacity: 0;
+          transform: translateX(-250px);
+        }
+
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      } */
+
+      /* .first-div:hover {
+        background-color: brown;
+
+       } */
+    </style>
+  </head>
+  <body>
+    <div class="first-div"></div>
+  </body>
+</html>
