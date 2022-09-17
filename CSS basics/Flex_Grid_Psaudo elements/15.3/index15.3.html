@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Grid Template Areas</title>
+    <style>
+      * {
+        /* text-align: center; */
+        text-align: inherit;
+      }
+
+      .container {
+        display: grid;
+        grid-template-areas:
+          "header header header header"
+          "content content content sidebar"
+          "box-1 box-2 box-3 sidebar2"
+          "footer footer footer footer";
+        grid-gap: 1rem;
+      }
+
+      .header,
+      .content,
+      .sidebar,
+      .sidebar2,
+      .box-1,
+      .box-2,
+      .box-3,
+      .box-4,
+      .footer {
+        border: 1px #ccc solid;
+        padding: 0.5rem;
+      }
+
+      .header {
+        grid-area: header;
+        background-color: rgb(255, 69, 69);
+      }
+
+      .content {
+        grid-area: content;
+        background-color: rgb(125, 203, 0);
+      }
+
+      .sidebar {
+        grid-area: sidebar;
+        background-color: rgb(69, 187, 255);
+      }
+      .sidebar2 {
+        grid-area: sidebar2;
+        background-color: rgb(255, 38, 208);
+      }
+
+      .box-1 {
+        grid-area: box-1;
+        background-color: rgb(125, 203, 0);
+      }
+
+      .box-2 {
+        grid-area: box-2;
+        background-color: rgb(125, 203, 0);
+      }
+
+      .box-3 {
+        grid-area: box-3;
+        background-color: rgb(125, 203, 0);
+      }
+
+      .footer {
+        grid-area: footer;
+        text-align: center;
+        background-color: rgb(255, 251, 43);
+      }
+
+      @media (min-width: 480px) {
+        .container {
+          display: grid;
+          grid-template-areas:
+            "header"
+            "sidebar"
+            "content"
+            "box-1"
+            "box-2"
+            "box-3"
+            "sidebar2"
+            "footer";
+        }
+      }
+
+      @media (min-width: 600px) {
+        .container {
+          display: grid;
+          grid-template-areas:
+            "header header header header"
+            " sidebar content content content"
+            " sidebar box-1 box-2 box-3"
+            "sidebar2 sidebar2 sidebar2 sidebar2"
+            "footer footer footer footer";
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <header class="header"><h1>Header</h1></header>
+      <section class="content">
+        <h3>Content</h3>
+        <p>
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo suscipit
+          reprehenderit aperiam repudiandae voluptatibus, expedita ex temporibus
+          eos et mollitia velit vel molestias sint dolore at doloremque neque
+          minima optio ad tempore quisquam perferendis esse non. Aliquam illum
+          doloremque architecto! Rem voluptas at sunt sed enim eius laborum
+          dolores quaerat?
+        </p>
+      </section>
+      <aside class="sidebar">
+        <h3>Sidebar</h3>
+        <ul>
+          <li>Some Company</li>
+          <li>50 Main st, Boston MA</li>
+          <li>something@something.com</li>
+          <li>555-555-5555</li>
+        </ul>
+      </aside>
+      <div class="box-1">
+        <h3>More Content</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          quisquam at veritatis a labore quod illo dolorem fugiat quas
+          repellendus omnis odio eligendi ab, dolor necessitatibus, saepe
+          aliquid quaerat aperiam.
+        </p>
+      </div>
+      <div class="box-2">
+        <h3>More Content</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          quisquam at veritatis a labore quod illo dolorem fugiat quas
+          repellendus omnis odio eligendi ab, dolor necessitatibus, saepe
+          aliquid quaerat aperiam.
+        </p>
+      </div>
+      <div class="box-3">
+        <h3>More Content</h3>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Maiores
+          quisquam at veritatis a labore quod illo dolorem fugiat quas
+          repellendus omnis odio eligendi ab, dolor necessitatibus, saepe
+          aliquid quaerat aperiam.
+        </p>
+      </div>
+      <aside class="sidebar2">
+        <h3>Sidebar2</h3>
+        <ul>
+          <li>Brand</li>
+          <li>50 Main st,</li>
+          <li>Boston</li>
+          <li>555-555-5555</li>
+        </ul>
+      </aside>
+      <footer class="footer"><p>Copyright &copy; 2019</p></footer>
+    </div>
+  </body>
+</html>
